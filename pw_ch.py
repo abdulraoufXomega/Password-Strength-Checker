@@ -75,13 +75,13 @@ def check_password_strength(password):
         
     # feedback based on the strength score
     if strength == 0:
-        print("Very Weak: Your password is too common or too short.")
+        print("Your password is too short, make sure you put more than 7 characters.")
     elif strength <= 2:
         print("Weak: your password should be longer and include more character types.")
     elif strength <= 4:
         print("Moderate: Your password is okay but could be stronger.")
     elif strength <= 6:
-        print("Strong: Your password meets more criteria.")
+        print("Strong: Your password meets most criteria.")
     else:
         print("Very Strong: Your password is highly secure.")
     
